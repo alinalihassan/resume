@@ -1,0 +1,196 @@
+%-------------------------
+% Resume in Latex
+% Author : Alin Ali Hassan
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+  \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+    \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+    \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%%%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  \textbf{\huge Alin Ali Hassan} \\ \vspace{4pt}
+  \small +31615232390 $|$ \href{mailto:hassanalinali@gmail.com}{\underline{hassanalinali@gmail.com}} $|$
+  \href{https://linkedin.com/in/alinalihassan}{\underline{linkedin.com/in/alinalihassan}} $|$
+  \href{https://github.com/alinalihassan}{\underline{github.com/alinalihassan}}
+\end{center}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Nordcloud, an IBM Company}{Amsterdam, Netherlands}
+{Cloud Developer - Consultant}{Jan 2022 - Present}
+\resumeItemListStart
+\resumeItem{Lego}
+{Lead the development of the integration between Lego's Cloud Enablement and Baseplate teams. I'm leading the development of the integration between the automated provider of multi-cloud accounts on the Spotify's Backstage Developer Platform (Baseplate).}
+\resumeItem{Syngenta}
+{Leading science-based agtech company. Took ownership and developed Serverless Lambdas in Python that trigger off of Jira tickets to initiate changes in AWS infrastructure, such as creating, decommissioning or changing accounts and services.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Arup}{Amsterdam, Netherlands}
+{Software Engineer}{May 2021 - Jan 2022}
+\resumeItemListStart
+\resumeItem{Arup Workflow Framework (AWF)}
+{Developed the workflow orchestration API using Python, enhancing operational efficiency and consistency. Utilized AWS Step Functions for orchestrating microservices into scalable workflows and leveraged Azure Batch HPC (High-Performance Computing) for running parallel and high-performance computing (HPC) applications efficiently in the cloud.}
+\resumeItem{Workflows}
+{Contributed to the support of a wide range of engineering software, enabling the execution of various types of analyses, scripts, and API communications through templated workflows.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Worldline}{Amsterdam, Netherlands}
+{Software Engineer}{Apr 2020 - Apr 2021}
+\resumeItemListStart
+\resumeItem{Payment Products}
+{Worked on adding new payment products from the Brazilian market to Worldline's hosted checkout using Java and Spring Boot.}
+\resumeItem{Scrum Master}
+{Due to organizational changes due to Worldline's acquisitions, I had the opportunity to get certified and step up to fill the role of a Scrum Master alongside my engineering responsibilities}
+\resumeItem{Release Pipelines}
+{Improved the release process and pipeline speed by 25\%, which was written as a separate Java program to automate external services such as Jira tickets, Jenkins pipelines and GitLab releases, by optimizing the orchestration and waiting times.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Priogen}{Amsterdam, Netherlands}
+{Software Engineer}{Jan 2018 - Mar 2020}
+\resumeItemListStart
+\resumeItem{Modernization}
+{Contributed to the infrastructure changes, including the migration from Microsoft Server SQL to PostgreSQL and migrating Java monolith to micro-services on AWS.}
+\resumeItem{Energy Monitoring Tool}
+{Fragmentation of different web monitoring tools and programs led to inefficiencies in utilizing the data. I've had the opportunity to propose and lead the development of the largest internal application to aggregate monitoring tools, provide time-critical notifications and more to the traders.}
+\resumeItem{Data Pipelines}
+{Data pipelines were integral to Priogen's energy trading business, which provided insights for different aggregation tools. Implemented different automated aggregation Python tools to fetch and wrangle data.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Point Pickup}{Bucharest, Romania}
+{Android Developer}{Apr 2017 - Jan 2018}
+\resumeItemListStart
+\resumeItem{Android App}
+{Lead the development of a US-based startup Android app through contracting firms Telcor and Clear Maze. Point Pickup, a last-mile eCommerce Delivery Solution required different user experiences for consumers and drivers. Challenges during development included time-critical communication between server and client, and accounting for real-world event flows, such as cancellations, inventory issues, etc.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Vrije Universiteit}{Amsterdam, Netherlands}
+{Computer Science, Bachelor's}{Sep. 2017 -- Jun. 2021}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Lesma}
+{Compiled, statically typed, imperative, and object-oriented programming language with a focus on expressiveness, elegance, and simplicity without sacrificing performance, written in C++ and LLVM.}
+\resumeSubItem{WriteNow}
+{An aesthetically-pleasing native desktop application used to write and keep track of Markdown notes. Written using Electron and web technologies.}
+\resumeSubItem{SmartRead}
+{Educational platform for teachers and students used for classroom management, pupil performance analysis, resource sharing and in-app store with materials. It was developed during the contest “Company of the Year”, it was highlighted in Forbes Magazine Romania and national news channels for its innovation in education.}
+\resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+\resumeSubHeadingListStart
+\item{
+            \textbf{Languages: }{Python, Typescript, Java}
+            \hfill
+            \textbf{Databases: }{SQLite, PostgreSQL, MongoDB, Redis}
+      }
+\item{
+            \textbf{Technologies: }{React, Node.js, Next.js, FastAPI}
+            \hfill
+            \textbf{Cloud: }{AWS, GCP, Terraform}
+      }
+\item{
+            \textbf{Other: }{Docker, Scrum }
+      }
+\resumeSubHeadingListEnd
+
+\end{document}

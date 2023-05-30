@@ -1,0 +1,19 @@
+{
+  "files.exclude": {
+    "**/Archieve/": true,
+    "**/*.aux": true,
+    "**/*.lof": true,
+    "**/*.log": true,
+    "**/*.lot": true,
+    "**/*.fls": true,
+    "**/*.out": true,
+    "**/*.toc": true,
+    "**/*.fmt": true,
+    "**/*.fot": true,
+    "**/*.cb": true,
+    "**/*.cb2": true,
+    "**/*.fdb_latexmk": true,
+    "**/*.gz": true,
+    "**/.*.lb": true
+  }
+}
