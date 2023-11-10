@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[a4paper,10pt]{article}
+\documentclass[a4paper,11pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -40,7 +40,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-6pt}\scshape\raggedright\large
+  \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -78,12 +78,12 @@
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
-\renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemii}{$\bullet$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-    \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-    \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+  \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+  \newcommand{\resumeItemListStart}{\begin{itemize}}
+  \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%%%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%
@@ -107,9 +107,10 @@
 {Cloud Developer - Consultant}{Jan 2022 - Present}
 \resumeItemListStart
 \resumeItem{Lego}
-{Lead the development of the integration between Lego's Cloud Enablement and Baseplate teams. I'm leading the development of the integration between the automated provider of multi-cloud accounts on the Spotify's Backstage Developer Platform (Baseplate).}
+{Leading the development of several crucial integrations within Lego between Cloud Enablement and Baseplate teams, automating the provisioning of multi-cloud accounts on Spotify's Backstage Developer Platform.}
 \resumeItem{Syngenta}
-{Leading science-based agtech company. Took ownership and developed Serverless Lambdas in Python that trigger off of Jira tickets to initiate changes in AWS infrastructure, such as creating, decommissioning or changing accounts and services.}
+{Undertook ownership and development of Serverless Lambdas in Python, designed to trigger changes in AWS infrastructure based on Jira tickets. This process enabled efficient creation, decommissioning, and modification of accounts and services.}
+% {Leading science-based agtech company. Took ownership and developed Serverless Lambdas in Python that trigger off of Jira tickets to initiate changes in AWS infrastructure, such as creating, decommissioning or changing accounts and services.}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -117,7 +118,7 @@
 {Software Engineer}{May 2021 - Jan 2022}
 \resumeItemListStart
 \resumeItem{Arup Workflow Framework (AWF)}
-{Developed the workflow orchestration API using Python, enhancing operational efficiency and consistency. Utilized AWS Step Functions for orchestrating microservices into scalable workflows and leveraged Azure Batch HPC (High-Performance Computing) for running parallel and high-performance computing (HPC) applications efficiently in the cloud.}
+{Developed the workflow orchestration API using Python, enhancing operational efficiency and consistency. Utilized AWS Step Functions for orchestrating microservices into scalable workflows and leveraged Azure Batch HPC (High-Performance Computing) for running parallel and performance-critical applications efficiently in the cloud.}
 \resumeItem{Workflows}
 {Contributed to the support of a wide range of engineering software, enabling the execution of various types of analyses, scripts, and API communications through templated workflows.}
 \resumeItemListEnd
@@ -130,8 +131,8 @@
 {Worked on adding new payment products from the Brazilian market to Worldline's hosted checkout using Java and Spring Boot.}
 \resumeItem{Scrum Master}
 {Due to organizational changes due to Worldline's acquisitions, I had the opportunity to get certified and step up to fill the role of a Scrum Master alongside my engineering responsibilities}
-\resumeItem{Release Pipelines}
-{Improved the release process and pipeline speed by 25\%, which was written as a separate Java program to automate external services such as Jira tickets, Jenkins pipelines and GitLab releases, by optimizing the orchestration and waiting times.}
+\resumeItem{Release}
+{Optimized orchestration and waiting times of external services used in the release process such as Jira API calls, Jenkins build pipelines and GitLab releases, which improved the speed of the pipelines by 25\%.}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -142,17 +143,17 @@
 {Contributed to the infrastructure changes, including the migration from Microsoft Server SQL to PostgreSQL and migrating Java monolith to micro-services on AWS.}
 \resumeItem{Energy Monitoring Tool}
 {Fragmentation of different web monitoring tools and programs led to inefficiencies in utilizing the data. I've had the opportunity to propose and lead the development of the largest internal application to aggregate monitoring tools, provide time-critical notifications and more to the traders.}
-\resumeItem{Data Pipelines}
-{Data pipelines were integral to Priogen's energy trading business, which provided insights for different aggregation tools. Implemented different automated aggregation Python tools to fetch and wrangle data.}
+\resumeItem{Data Ingestion}
+{Data ingestion pipelines were integral to Priogen's trading business, which provided insights for aggregation tools. Implemented different automated aggregation Python tools to fetch and wrangle data.}
 \resumeItemListEnd
 
-\resumeSubheading
-{Point Pickup}{Bucharest, Romania}
-{Android Developer}{Apr 2017 - Jan 2018}
-\resumeItemListStart
-\resumeItem{Android App}
-{Lead the development of a US-based startup Android app through contracting firms Telcor and Clear Maze. Point Pickup, a last-mile eCommerce Delivery Solution required different user experiences for consumers and drivers. Challenges during development included time-critical communication between server and client, and accounting for real-world event flows, such as cancellations, inventory issues, etc.}
-\resumeItemListEnd
+% \resumeSubheading
+% {Point Pickup}{Bucharest, Romania}
+% {Android Developer}{Apr 2017 - Jan 2018}
+% \resumeItemListStart
+% \resumeItem{Android App}
+% {Lead the development of a US-based startup Android app through contracting firms Telcor and Clear Maze. Point Pickup, a last-mile eCommerce Delivery Solution required different user experiences for consumers and drivers. Challenges during development included time-critical communication between server and client, and accounting for real-world event flows, such as cancellations, inventory issues, etc.}
+% \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
@@ -176,21 +177,15 @@
 \resumeSubHeadingListEnd
 
 %--------PROGRAMMING SKILLS------------
-\section{Skills}
-\resumeSubHeadingListStart
-\item{
-            \textbf{Languages: }{Python, Typescript, Java}
-            \hfill
-            \textbf{Databases: }{SQLite, PostgreSQL, MongoDB, Redis}
-      }
-\item{
-            \textbf{Technologies: }{React, Node.js, Next.js, FastAPI}
-            \hfill
-            \textbf{Cloud: }{AWS, GCP, Terraform}
-      }
-\item{
-            \textbf{Other: }{Docker, Scrum }
-      }
-\resumeSubHeadingListEnd
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+        \textbf{Languages}{: Typescript, Java, Python, C/C++, SQL, HTML/CSS} \\
+        \textbf{Frameworks}{: React, Node.js, Next.js, Flask, FastAPI, LLVM} \\
+        \textbf{Developer Tools}{: Git, Docker, GitHub Actions, JUnit}\\
+        \textbf{Databases}{: PostgreSQL, Microsoft SQL Server, MongoDB, Redis}\\
+        \textbf{Cloud}{: Amazon Web Services, Google Cloud Platform, Terraform}
+        }}
+\end{itemize}
 
 \end{document}
