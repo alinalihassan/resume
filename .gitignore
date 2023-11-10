@@ -16,3 +16,6 @@ Archieve/
 *.fdb_latexmk
 *.gz
 .*.lb
+
+# Output
+*.pdf

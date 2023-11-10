@@ -9,5 +9,5 @@ Most currently available templates either focus on two columns, or are multiple 
 ### Build using Docker
 
 ```sh
-docker build -t latex . && docker run --rm -i -v "$PWD":/data latex pdflatex alin_ali_hassan.tex
+docker run --rm -i -v "$PWD":/data sotetsuk/pdflatex pdflatex alin_ali_hassan.tex
 ```
