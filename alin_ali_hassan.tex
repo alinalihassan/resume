@@ -128,20 +128,17 @@
 {Cloud Developer - Consultant}{Jan 2022 - Nov 2023}
 \resumeItemListStart
 \resumeItem{Lego}
-{Leading the development of several crucial integrations within Lego between Cloud Enablement and Baseplate teams, automating the provisioning of multi-cloud accounts on Spotify's Backstage Developer Platform.}
+{Led integrations between Cloud Enablement and Baseplate, turning multi-cloud account provisioning into a self-service flow on Spotify's Backstage, Lego's internal developer platform.}
 \resumeItem{Syngenta}
-{Undertook ownership and development of Serverless Lambdas in Python, designed to trigger changes in AWS infrastructure based on Jira tickets. This process enabled efficient creation, decommissioning, and modification of accounts and services.}
-% {Leading science-based agtech company. Took ownership and developed Serverless Lambdas in Python that trigger off of Jira tickets to initiate changes in AWS infrastructure, such as creating, decommissioning or changing accounts and services.}
+{Owned serverless Python Lambdas that applied AWS infrastructure changes from Jira tickets, covering creation, decommissioning and modification of accounts and services.}
 \resumeItemListEnd
 
 \resumeSubheading
 {Arup}{Amsterdam, Netherlands}
 {Software Engineer}{May 2021 - Jan 2022}
 \resumeItemListStart
-\resumeItem{Arup Workflow Framework (AWF)}
-{Developed the workflow orchestration API using Python, enhancing operational efficiency and consistency. Utilized AWS Step Functions for orchestrating microservices into scalable workflows and leveraged Azure Batch HPC (High-Performance Computing) for running parallel and performance-critical applications efficiently in the cloud.}
-\resumeItem{Workflows}
-{Contributed to the support of a wide range of engineering software, enabling the execution of various types of analyses, scripts, and API communications through templated workflows.}
+\resumeItem{Workflow Orchestration}
+{Built a Python workflow orchestration API using AWS Step Functions to compose microservices into scalable pipelines, and Azure Batch HPC for parallel, performance-critical engineering workloads.}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -149,31 +146,27 @@
 {Software Engineer}{Apr 2020 - Apr 2021}
 \resumeItemListStart
 \resumeItem{Payment Products}
-{Worked on adding new payment products from the Brazilian market to Worldline's hosted checkout using Java and Spring Boot.}
-\resumeItem{Scrum Master}
-{Due to organizational changes due to Worldline's acquisitions, I had the opportunity to get certified and step up to fill the role of a Scrum Master alongside my engineering responsibilities}
+{Added Brazilian payment methods to Worldline's hosted checkout using Java and Spring Boot, integrating new APIs into an existing payments platform.}
 \resumeItem{Release}
-{Optimized orchestration and waiting times of external services used in the release process such as Jira API calls, Jenkins build pipelines and GitLab releases, which improved the speed of the pipelines by 25\%.}
+{Cut release-pipeline wait time 25\% by optimizing orchestration of Jira, Jenkins, and GitLab in the release process.}
 \resumeItemListEnd
 
 \resumeSubheading
 {Priogen}{Amsterdam, Netherlands}
 {Software Engineer}{Jan 2018 - Mar 2020}
 \resumeItemListStart
-\resumeItem{Modernization}
-{Contributed to the infrastructure changes, including the migration from Microsoft Server SQL to PostgreSQL and migrating Java monolith to micro-services on AWS.}
-\resumeItem{Energy Monitoring Tool}
-{Fragmentation of different web monitoring tools and programs led to inefficiencies in utilizing the data. I've had the opportunity to propose and lead the development of the largest internal application to aggregate monitoring tools, provide time-critical notifications and more to the traders.}
-\resumeItem{Data Ingestion}
-{Data ingestion pipelines were integral to Priogen's trading business, which provided insights for aggregation tools. Implemented different automated aggregation Python tools to fetch and wrangle data.}
+\resumeItem{Platform Migration}
+{Migrated a Java monolith to AWS microservices and moved the primary datastore from Microsoft SQL Server to PostgreSQL.}
+\resumeItem{Energy Monitoring}
+{Proposed and led the largest internal app for traders: aggregated fragmented monitoring tools, ingested market data, and pushed time-critical notifications.}
 \resumeItemListEnd
 
 \resumeSubheading
 {Point Pickup}{Bucharest, Romania}
 {Android Developer}{Apr 2017 - Jan 2018}
 \resumeItemListStart
-\resumeItem{Uber for Package Delivery}
-{Lead the development of a US-based startup Android app through contracting firms Telcor and Clear Maze. Point Pickup, a last-mile eCommerce Delivery Solution required different user experiences for consumers and drivers. Challenges during development included time-critical communication between server and client, and accounting for real-world event flows, such as cancellations, inventory issues, etc.}
+\resumeItem{Last-mile Marketplace}
+{Led the consumer and driver Android apps for a US last-mile delivery marketplace. Built realtime client-server sync and handled real-world event flows such as cancellations, inventory issues and time-critical updates.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -189,27 +182,23 @@
 %-----------PROJECTS-----------------
 \section{Projects}
 \resumeSubHeadingListStart
+\resumeSubItem{CommanderView}
+{Built \href{https://commanderview.app}{\underline{commanderview.app}}, a production Magic: The Gathering platform (catalog, deck builder, collections, in-browser playtest, combo search) over a $\sim$2.5GB card dataset. Wrote a Scryfall-compatible search engine that compiles queries to PostgreSQL, with GIN/FTS indexes, denormalized projections, and zero-downtime catalog swaps so search stays fast across hundreds of thousands of printings. TypeScript, Node.js, Next.js, PostgreSQL.}
 \resumeSubItem{Guilders}
-{An AI-first personal finance assistant that helps you manage your money and investments. Creating the most context-rich platform for finances and leveraging AI insights to improve your budget, plan your early retirement and more. Built with React, Next.js, Typescript and Supabase.}
-\resumeSubItem{Charitee}
-{Mobile app for creating trustful connections between donors and financially transparent and audited charities in The Netherlands. Built with Typescript and Expo.}
+{AI-first personal finance assistant for budgets and investments. React, Next.js, TypeScript, Supabase.}
 \resumeSubItem{Lesma}
-{Compiled, statically typed, imperative, and object-oriented programming language with a focus on expressiveness, elegance, and simplicity without sacrificing performance, written in Python, C++ and LLVM.}
-\resumeSubItem{WriteNow}
-{An aesthetically-pleasing native desktop application used to write and keep track of Markdown notes. Written using Electron and web technologies.}
-\resumeSubItem{SmartRead}
-{Educational platform for teachers and students used for classroom management, pupil performance analysis, resource sharing and in-app store with materials. It was developed during the contest "Company of the Year", it was highlighted in Forbes Magazine Romania and national news channels for its innovation in education.}
+{Compiled, statically typed language written in Python, C++ and LLVM, focused on parsers, type systems and code generation.}
 \resumeSubHeadingListEnd
 
 %--------PROGRAMMING SKILLS------------
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-        \textbf{Languages}{: Typescript, Python, Java, C/C++, SQL, HTML/CSS} \\
-        \textbf{Frameworks}{: React, Node.js, Next.js, Flask, FastAPI, LLVM} \\
-        \textbf{Developer Tools}{: Git, Docker, GitHub Actions, JUnit}\\
-        \textbf{Databases}{: PostgreSQL, Microsoft SQL Server, MongoDB, Redis}\\
-        \textbf{Cloud}{: Amazon Web Services, Google Cloud Platform, Terraform}
+        \textbf{Languages}{: TypeScript, Python, Java, SQL, C/C++} \\
+        \textbf{Backend}{: Node.js, Next.js, Spring Boot, FastAPI, REST APIs} \\
+        \textbf{Data}{: PostgreSQL (FTS/GIN), Redis, MongoDB} \\
+        \textbf{Cloud}{: AWS, GCP, Terraform, Docker} \\
+        \textbf{Practices}{: Microservices, mutation testing, CI/CD}
         }}
 \end{itemize}
 
